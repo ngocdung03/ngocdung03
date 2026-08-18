@@ -204,7 +204,7 @@ Architectures         →  Transformers · CNNs · LSTMs / RNNs · multi-task ne
 
 ## ◈ Experience
 
-| | |
+| Role | Period |
 |:---|:---|
 | **AI Researcher** · MoAdata | *Jan 2022 – present* |
 | **Public Health / Data Researcher** · National Cancer Center, South Korea | *May 2020 – Dec 2021* |
@@ -227,16 +227,16 @@ Architectures         →  Transformers · CNNs · LSTMs / RNNs · multi-task ne
 
 <div align="center">
 
-| | |
-|:---:|:---|
-| 🧠 | **AI VIETNAM — AIO2025**, intensive AI/ML program *(2025)* |
-| 🩺 | **AI for Medical Prognosis** — deeplearning.ai |
-| ☁️ | **AWS Machine Learning Fundamentals** — Udacity |
-| 📈 | **Predictive Analytics Nanodegree** — Udacity |
-| 🧮 | **Mathematics for Machine Learning** — Imperial College London |
-| 🔬 | **Deep Learning with TensorFlow** — Codecademy |
-| 🐳 | **Docker & Kubernetes** · **Advanced Statistical Methods in Python** |
-| 📝 | **Good Clinical Practice** · **Writing in the Sciences** — Stanford |
+<table>
+<tr><td align="center">🧠</td><td><b>AI VIETNAM — AIO2025</b>, intensive AI/ML program <i>(2025)</i></td></tr>
+<tr><td align="center">🩺</td><td><b>AI for Medical Prognosis</b> — deeplearning.ai</td></tr>
+<tr><td align="center">☁️</td><td><b>AWS Machine Learning Fundamentals</b> — Udacity</td></tr>
+<tr><td align="center">📈</td><td><b>Predictive Analytics Nanodegree</b> — Udacity</td></tr>
+<tr><td align="center">🧮</td><td><b>Mathematics for Machine Learning</b> — Imperial College London</td></tr>
+<tr><td align="center">🔬</td><td><b>Deep Learning with TensorFlow</b> — Codecademy</td></tr>
+<tr><td align="center">🐳</td><td><b>Docker &amp; Kubernetes</b> · <b>Advanced Statistical Methods in Python</b></td></tr>
+<tr><td align="center">📝</td><td><b>Good Clinical Practice</b> · <b>Writing in the Sciences</b> — Stanford</td></tr>
+</table>
 
 </div>
 
