@@ -59,8 +59,8 @@ The combination I care about is a practical one: **deep-learning engineering wit
 <table>
 <tr><td>
 
-**🏅 A Study on Survival Analysis Methods Using Neural Networks to Prevent Cancers**
-*Chulyoung B., Boseon K., Sunha J., Jonghoon L., **Dung NN***
+**🏅 A Study on Survival Analysis Methods Using Neural Networks to Prevent Cancers**<br/>
+*Chulyoung B., Boseon K., Sunha J., Jonghoon L., **Dung NN***<br/>
 `Cancers` · **2023**
 > Neural-network approaches to time-to-event cancer risk, benchmarked against classical survival models.
 > **My role:** deep survival modelling · data cleaning · analysis · manuscript
@@ -68,8 +68,8 @@ The combination I care about is a practical one: **deep-learning engineering wit
 </td></tr>
 <tr><td>
 
-**Metabolic health and central obesity are significantly associated with an increased risk of thyroid cancer: Data from the Korean Genome and Epidemiology Study**
-***Dung NN**, Jinhee K., Mikyung K.* &nbsp; · &nbsp; 🥇 *first author*
+**Metabolic health and central obesity are significantly associated with an increased risk of thyroid cancer: Data from the Korean Genome and Epidemiology Study**<br/>
+***Dung NN**, Jinhee K., Mikyung K.* &nbsp; · &nbsp; 🥇 *first author*<br/>
 `Cancer Epidemiology, Biomarkers & Prevention` · **2021**
 > Cross-classifying metabolic phenotype against central obesity in the KoGES cohort — the risk was not reducible to BMI alone.
 > **My role:** research questions · data cleaning · survival analysis · manuscript
@@ -77,23 +77,23 @@ The combination I care about is a practical one: **deep-learning engineering wit
 </td></tr>
 <tr><td>
 
-**A Systematic Review of Effort–Reward Imbalance among Health Workers**
-*Huy NV, Mai DL, Thanh NV, **Dung NN**, Anh NT*
+**A Systematic Review of Effort–Reward Imbalance among Health Workers**<br/>
+*Huy NV, Mai DL, Thanh NV, **Dung NN**, Anh NT*<br/>
 `Int. Journal of Health Planning and Management` · **2018**
 
 </td></tr>
 <tr><td>
 
-**Patient satisfaction with health-care services at a national institute of ophthalmology**
-*Huy NV, **Dung NN**, Hanh LT, Thanh NV* &nbsp; · &nbsp; 🥈 *second author*
+**Patient satisfaction with health-care services at a national institute of ophthalmology**<br/>
+*Huy NV, **Dung NN**, Hanh LT, Thanh NV* &nbsp; · &nbsp; 🥈 *second author*<br/>
 `Int. Journal of Health Planning and Management` · **2017**
 > **My role:** data collection · logistic-regression analysis · manuscript
 
 </td></tr>
 <tr><td>
 
-**Cigarette Smoking among Adolescents aged 13–15 in Viet Nam: Results from GYTS 2014 Data**
-*Huong LT, …, **Dung NN**, et al.*
+**Cigarette Smoking among Adolescents aged 13–15 in Viet Nam: Results from GYTS 2014 Data**<br/>
+*Huong LT, …, **Dung NN**, et al.*<br/>
 `Asian Pacific Journal of Cancer Prevention` · **2016**
 > **My role:** logistic-regression analysis · manuscript
 
