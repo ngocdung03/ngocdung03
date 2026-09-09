@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&duration=3200&pause=1000&color=D64545&center=true&vCenter=true&width=820&height=80&lines=Ngoc-Dung+Nguyen;AI+%2F+Machine+Learning+Researcher;Deep+Survival+Analysis+%7C+Cancer+Risk+Prediction;Biomedical+AI+for+Drug+Discovery)](https://ngocdung03.github.io)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&duration=3200&pause=1000&color=D64545&center=true&vCenter=true&width=820&height=80&lines=Ngoc-Dung+Nguyen;AI+%2F+Machine+Learning+Researcher;Deep+Survival+Analysis+%7C+Clinical+Risk+Prediction;Medical+Foundation+Models+%7C+LLM+%2F+RAG)](https://ngocdung03.github.io)
 
 <br/>
 
@@ -36,7 +36,7 @@ My path into machine learning came **through medicine rather than around it**. I
 
 The combination I care about is a practical one: **deep-learning engineering with a real understanding of the clinical outcome being modelled.** Most of my work is about respecting the statistics of time-to-event data while still using modern architectures.
 
-**Working toward:** applying biomedical AI to **AI-driven drug discovery** — the time-to-event machinery I use for cancer risk transfers directly to preclinical and clinical endpoints, and representation learning for molecules runs on the same tooling.
+**Working toward:** **clinical intelligence** — medical foundation models and retrieval-augmented language systems applied to real clinical questions. The evaluation discipline that time-to-event modelling forces on you (calibration, censoring, what the metric actually measures) is exactly what generative clinical systems currently lack, and it transfers directly.
 
 <br/>
 
@@ -49,6 +49,7 @@ The combination I care about is a practical one: **deep-learning engineering wit
 | Calibration over horizon, not just discrimination | Large biomedical dataset integration & cleaning |
 | Multi-task risk across cancer types | Reproducible R / Python analysis pipelines |
 | Attention mechanisms over patient features | Pre-specified statistical analysis plans |
+| Retrieval-augmented generation over documents | Multimodal imaging + metadata study design |
 
 </div>
 
@@ -137,12 +138,34 @@ Cox proportional hazards is interpretable and hard to beat — when the hazard r
 
 `PyTorch` `Attention` `Multi-Task Learning` `C-Index` `Survival Analysis`
 
-### 📰 [ADnewsHD](https://github.com/ngocdung03/ADnewsHD) — Daily AI/Finance Digest *(side project)*
-> *Installable PWA serving one capped daily digest of high-signal AI, finance, and economics news*
+### 💬 [rag-chatbot-streamlit](https://github.com/aio25-mix002/rag-chatbot-streamlit) — Retrieval-Augmented Generation over PDFs *(team project)*
+> *Document question-answering with a locally served open-weights LLM — no hosted API in the loop*
 
-A scheduled Python pipeline fetches, filters, summarizes, and ranks items, writing a single `digest.json`; a React PWA reads and renders it. The two halves never call each other at runtime — **that one file is the entire contract**, which keeps each side independently testable.
+Asked about a document it never saw in training, a language model can refuse or invent. **Retrieval removes the choice** — the source passages go into the prompt, narrowing the model's task from recall to reading comprehension, and making every answer traceable to the chunks that produced it.
 
-`Python` `React` `PWA` `LLM Summarization` `Scheduled Pipelines`
+- **Semantic chunking** at 95th-percentile embedding-similarity breakpoints, rather than fixed character windows that cut arguments in half
+- **Chroma** vector store with a Vietnamese bi-encoder — retrieval quality is the real bottleneck in RAG, so the encoder matches the corpus language
+- **Vicuna-7B under 4-bit NF4 quantization**, fitting a 7B model onto consumer or Colab GPUs; full-precision path retained for larger cards
+- **LCEL pipeline** — retrieval, prompt, generation, and parsing composed as independently replaceable stages, with prompts versioned as files rather than buried in code
+- Conversational memory over the recent turn window, so follow-up questions resolve against earlier context
+
+`LangChain` `Chroma` `Hugging Face Transformers` `Quantized Inference` `Streamlit` `RAG`
+
+---
+
+## ◈ Research in Progress
+
+### 🧠 Retinal Imaging and AI for Dementia Risk Prediction — *research proposal*
+> *Canadian Longitudinal Study on Aging (CLSA) Comprehensive Cohort · March 2026*
+
+A written research proposal — **no model has been trained and no results are reported.** It specifies a study design for predicting incident dementia from non-mydriatic colour fundus photography in the CLSA Comprehensive Cohort (n ≈ 30,000), with ICD-10-confirmed longitudinal outcomes.
+
+- Three candidate pipelines specified and compared: **multimodal intermediate fusion** of image and clinical metadata, **machine-to-machine transfer** followed by risk prediction, and **segmentation-guided two-step prediction**
+- An **image-quality screening stage**, since population-cohort fundus photography is acquired at eleven sites without pharmacological dilation
+- Constrained by the cohort's design — CLSA collects no OCT or OCTA, so every method must work from standard 2D RGB photographs
+- Evaluation framework specified over discrimination and calibration, consistent with the time-to-event framing of incident dementia
+
+`Study Design` `Multimodal Deep Learning` `Retinal Imaging` `Neurodegeneration` `Cohort Data`
 
 ---
 
@@ -157,6 +180,8 @@ Cohort Epidemiology   →  analytic-cohort definition · exposure windows · con
                          proportional-hazards diagnostics · informative-missingness handling
 Classical ML          →  logistic regression · regularized GLMs · gradient boosting · feature selection
 Architectures         →  Transformers · CNNs · LSTMs / RNNs · multi-task networks
+LLM & Retrieval       →  retrieval-augmented generation · semantic chunking · vector stores
+                         prompt templating · quantized local inference · conversational memory
 ```
 
 ---
@@ -189,8 +214,14 @@ Architectures         →  Transformers · CNNs · LSTMs / RNNs · multi-task ne
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
+
+**LLM & Retrieval** &nbsp;·&nbsp;
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![Chroma](https://img.shields.io/badge/Chroma-4A5568?style=flat-square&logoColor=white)
+![RAG](https://img.shields.io/badge/RAG-2C7A7B?style=flat-square&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![Quantization](https://img.shields.io/badge/4--bit_Quantization-6B46C1?style=flat-square&logoColor=white)
 
 **Domain** &nbsp;·&nbsp;
 ![Cancer Epidemiology](https://img.shields.io/badge/Cancer_Epidemiology-8B1A1A?style=flat-square&logoColor=white)
@@ -256,7 +287,7 @@ Architectures         →  Transformers · CNNs · LSTMs / RNNs · multi-task ne
 
 <div align="center">
 
-**Open to research roles in biomedical AI, AI-driven drug discovery, clinical prediction, and deep survival modelling.**
+**Open to research roles in medical foundation models, clinical LLM and retrieval systems, clinical prediction, and deep survival modelling.**
 
 🌐 Full portfolio, publications, and CV → <a href="https://ngocdung03.github.io"><strong>ngocdung03.github.io</strong></a>
 
