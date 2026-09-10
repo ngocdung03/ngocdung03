@@ -77,6 +77,22 @@ CV/profile/site edits from this item:
 - Update `cv.html` skills + a proposals section.
 - Leave the uncommitted Seoul→Seongnam diff untouched; commit separately.
 
+## Status — 2026-09-10
+
+All five items complete and verified.
+
+The CV document was the one gap left open on 2026-09-09: `cv.html` on the site had been
+updated but the CV *document* had not. Resolved by making
+`App_lunit/application/NguyenNgocDung_CV.html` the canonical LUNIT-targeted copy (seeded
+from the Aug 25 `App_aigen` version, which already carried the CHORALE metric correction),
+retargeting it, rendering to PDF with headless chromium, and publishing to
+`ngocdung03.github.io/files/`. The site's previous PDF dated 2026-08-18 and predated both
+the correction and every addition here.
+
+Known divergence, left alone deliberately: the site's `cv.html` page is thinner than the
+PDF — it omits CHORALE, the CanAttend deployment, and the manuscripts in preparation. That
+predates this work.
+
 ## Success criteria
 - `grep -ri flask /home/nguyen/gh-profile` → no hits.
 - `gh repo view ngocdung03/ADnewsHD --json isPrivate` → `true`.
